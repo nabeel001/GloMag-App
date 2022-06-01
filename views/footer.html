@@ -1,0 +1,21 @@
+<div id="connect">
+    <h3>Connect with Us</h3>
+    <div class="handles">
+        <i class="fa-brands fa-twitter fa-2x" s></i>
+        <i class="fa-brands fa-facebook-square fa-2x"></i>
+        <i class="fa-brands fa-instagram fa-2x"></i>
+        <i class="fa-solid fa-envelope fa-2x"></i>
+    </div>
+    <form action="mailto:abcxyz@gmail.com" method="post" class="connect_form">
+        <label for="fname">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="lname">Message:</label><br>
+        <textarea id="w3review" name="w3review" rows="3" cols="30"></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+    <div class="location" ng-controller="locationCtrl">
+        <button ng-click="getLoc()">Locate Me</button>
+        <p id="location"></p>
+    </div>
+    <p class='rights'>© Copyright GloMag</p>
+</div>

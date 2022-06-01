@@ -1,0 +1,34 @@
+<div class="trending_blogs">
+    <h3>🔥 <span>TRENDING</span> Blogs</h3>
+    <div class="grid_blogs">
+        <article ng-repeat="blog in blogs | filter: {trend:true}">
+            <a href="">
+                <img ng-src="{{blog.src}}" alt="blog_thumbnail" style="width:100%">
+                <div class="text">
+                    <h5 class="topic"><b>{{blog.topic}}</b></h5>
+                    <p class="genre"><b>Genre:</b> {{blog.genre}}</p>
+                    <p class="author"><i>-{{blog.author}}</i></p>
+                </div>
+            </a>
+        </article>
+    </div>
+</div>
+
+<div class="blogs">
+    <h3>Blogs</h3>
+    <p class="filter"><i class="fa-solid fa-filter"></i> Filter by:</p>
+    <input class="auth_name_flt" ng-model="search_blog.genre" type="text" placeholder="Genre">
+    <input class="genre_name_flt" ng-model="search_blog.author" type="text" placeholder="Author Name">
+    <div class="grid_blogs">
+        <article ng-repeat="blog in blogs | filter : search_blog">
+            <a href="">
+                <img ng-src="{{blog.src}}" alt="blog_thumbnail" style="width:100%">
+                <div class="text">
+                    <h5 class="topic"><b>{{blog.topic}}</b></h5>
+                    <p class="genre"><b>Genre:</b> {{blog.genre}}</p>
+                    <p class="author"><i>-{{blog.author}}</i></p>
+                </div>
+            </a>
+        </article>
+    </div>
+</div>

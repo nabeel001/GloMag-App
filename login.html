@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Sacramento&family=Ubuntu&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.js"></script>
+    <link rel="stylesheet" href="css\style_login.css">
+    <title>Glomag - Login</title>
+</head>
+
+<body>
+    <img class="login_img" src="images/login_img.svg" alt="">
+    <div class="login_div">
+        <img src="images/brand_logo.jpeg" alt="Glomag_logo" class="brand_logo">
+        <h1 class="brand">GloMag</h1>
+        <form name="login_form" action="">
+            <label class="email_label" for="">Email</label><br>
+            <input type="email" name="email" class="email" ng-model="user.email" ng-required="true">
+            <div ng-show="login_form.email.$touched && login_form.email.$invalid">
+                <small style="color: red;">enter valid email-id</small>
+            </div><br>
+            <label class="pwd_label" for="">Password</label><br>
+            <input type="password" name="pwd" class="pwd" ng-model="user.pwd" ng-required="true">
+            <div ng-show="login_form.pwd.$touched && login_form.pwd.$invalid">
+                <small style="color: red;">enter valid password</small>
+            </div><br>
+            <input class="login_btn" type="submit" value="Login" ng-disabled="login_form.$invalid">
+            <a class="register_link" href="register.html">
+                <p>New User? Register here</p>
+            </a>
+        </form>
+    </div>
+</body>
+
+</html>

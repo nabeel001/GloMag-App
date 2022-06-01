@@ -1,0 +1,86 @@
+<div class="news">
+    <div class="news-head">
+        <div class="pulsating-circle"></div>
+        <h3> <span>LIVE</span> News </h3>
+    </div>
+    <a href="https://www.adweek.com/tvnewser/wsj-we-reported-cnns-breaking-news-a-year-ago/268690/" target="_blank">
+        <img src="images/news-1.jpeg" alt="news-1" width="32%">
+    </a>
+    <a href="https://www.nytimes.com/2018/08/21/business/media/cohen-manafort-cnn-foxnews-msnbc.html" target="_blank">
+        <img src="images/news-2.jpeg" alt="news-2" width="32%">
+    </a>
+    <a href="https://www.newscaststudio.com/2020/04/14/cnn-trump-briefing-chryons/" target="_blank">
+        <img src="images/news-3.jpeg" alt="news-3" width="32%">
+    </a>
+</div>
+
+<div class="trending">
+    <h3>🔥 <span>TRENDING</span> Blogs</h3>
+    <div class="grid" ng-controller="blogsCtrl">
+        <article ng-repeat="blog in blogs | filter: {trend:true}">
+            <a href="">
+                <img ng-src="{{blog.src}}" alt="blog_thumbnail" style="width:100%">
+                <div class="text">
+                    <h5 class="topic"><b>{{blog.topic}}</b></h5>
+                    <p class="genre"><b>Genre:</b> {{blog.genre}}</p>
+                    <p class="author"><i>-{{blog.author}}</i></p>
+                </div>
+            </a>
+        </article>
+    </div>
+</div>
+
+<div class="sub_plan">
+    <h3>Subscription Plans</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>
+                    <center>Weekly Plan</center>
+                </th>
+                <th>
+                    <center>Monthly Plan</center>
+                </th>
+                <th>
+                    <center>Yearly Plan</center>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="no-border">
+                <td>
+                    <h1>$20 USD</h1>
+                </td>
+                <td>
+                    <h1>$200 USD</h1>
+                </td>
+                <td>
+                    <h1>$2000 USD</h1>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h4>Benefits:</h4>
+                    <ul>
+                        <li>Ad Free Reading</li>
+                    </ul>
+                </td>
+                <td>
+                    <h4>Benefits:</h4>
+                    <ul>
+                        <li>Ad Free Reading</li>
+                        <li>New blogs mail notification</li>
+                    </ul>
+                </td>
+                <td>
+                    <h4>Benefits:</h4>
+                    <ul>
+                        <li>Ad Free Reading</li>
+                        <li>New blogs mail notification</li>
+                        <li>Curated Blog suggestion</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>

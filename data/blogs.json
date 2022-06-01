@@ -1,0 +1,65 @@
+[
+  {
+    "topic": "Trip to Manali",
+    "genre": "Travel",
+    "author": "Paarkeshvaran",
+    "src": "images/blog_1.jpeg",
+    "trend": true
+  },
+  {
+    "topic": "Biryanis in India",
+    "genre": "Food",
+    "author": "Madhav",
+    "src": "images/blog_2.jpeg",
+    "trend": false
+  },
+  {
+    "topic": "World Tour in 360 days",
+    "genre": "Travel",
+    "author": "Parkesh",
+    "src": "images/blog_3.jpeg",
+    "trend": false
+  },
+  {
+    "topic": "Modern Hollywood",
+    "genre": "Entertainment",
+    "author": "William Joel",
+    "src": "images/blog_4.jpeg",
+    "trend": false
+  },
+  {
+    "topic": "Financial Security at 21",
+    "genre": "Business",
+    "author": "Nithin Kumar",
+    "src": "images/blog_5.jpeg",
+    "trend": true
+  },
+  {
+    "topic": "Classical Music",
+    "genre": "Entertainment",
+    "author": "Michael Joe",
+    "src": "images/blog_6.jpeg",
+    "trend": true
+  },
+  {
+    "topic": "Carrom - A Legacy",
+    "genre": "Sports",
+    "author": "Vijay",
+    "src": "images/blog_4.jpeg",
+    "trend": false
+  },
+  {
+    "topic": "Digital Data Theft",
+    "genre": "Technology",
+    "author": "Radha N",
+    "src": "images/blog_3.jpeg",
+    "trend": true
+  },
+  {
+    "topic": "Building a Trading portfolio",
+    "genre": "Business",
+    "author": "William Joel",
+    "src": "images/blog_5.jpeg",
+    "trend": false
+  }
+]
